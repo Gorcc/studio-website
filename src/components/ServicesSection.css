@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+/* Stats Section */
+.stats-section {
+  padding: 6rem 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.stats-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-description {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #888;
+  max-width: 900px;
+  margin: 0 auto 5rem auto;
+}
+
+.highlight-icon {
+  color: var(--accent-color, #FFE600);
+  vertical-align: middle;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-item h2 {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.plus-icon {
+  font-size: 2rem;
+  color: var(--accent-color, #FFE600);
+  position: relative;
+  top: -1.5rem;
+}
+
+.stat-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 6rem 0;
+  background-color: #111;
+  color: white;
+}
+
+.how-it-works .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.how-header h2 {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 3.5rem;
+  margin-right: 2rem;
+}
+
+.how-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  opacity: 0.7;
+  text-align: right;
+  max-width: 300px;
+}
+
+.process-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.process-card {
+  flex: 1;
+  min-width: 250px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.process-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.get-started-btn {
+  display: block;
+  margin: 0 auto 4rem;
+  background-color: var(--accent-color, #FFE600);
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Add this new section for the marquee */
+.marquee-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.services-footer {
+  text-align: center;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 2.5rem;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ background-color: #f5f5f5;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  padding-left: 100%;
+  background-color: #f5f5f5;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-item {
+  display: inline-block;
+  padding: 0 2rem;
+  color: black;
+}
+
+.highlight-icon {
+  color: var(--accent-color, #FFE600);
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .stats-description {
+    font-size: 2rem;
+  }
+  
+  .how-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .how-header p {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-description {
+    font-size: 1.5rem;
+  }
+  
+  .stat-item h2 {
+    font-size: 3rem;
+  }
+  
+  .how-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .services-footer {
+    font-size: 1.8rem;
+  }
+}

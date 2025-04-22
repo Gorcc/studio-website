@@ -1,7 +1,20 @@
 import React from 'react';
 import './HeroSection.css';
+import Header from './Header';
+import { useLanguage } from '../context/LanguageContext';
 
 function HeroSection() {
+  // Add a fallback in case the context is not available
+  const { t = key => key } = useLanguage() || {};
+  
+  const scrollToStats = (e) => {
+    e.preventDefault();
+    const statsSection = document.querySelector('.services-footer');
+    if (statsSection) {
+      statsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero-section">
       {/* Background Video */}
@@ -11,31 +24,20 @@ function HeroSection() {
       </video>
       
       <div className="container">
-        <header className="hero-header">
-          <div className="logo">Hive <span>Records</span></div>
-          <nav className="nav-links">
-            <a href="#studios">Studios</a>
-            <a href="#mastering">Mastering</a>
-            <a href="#artists">Artists</a>
-            <a href="#releases">Releases</a>
-            <a href="#news">News</a>
-          </nav>
-          <button className="cta-btn">Get in Touch</button>
-        </header>
+        <Header />
 
         {/* Hero Text */}
         <div className="hero-content">
           <h1 className="title">
-          The Best <br></br> Mixing & Mastering
-          in North Cyprus <span className="highlight-icon">⚡</span>
+            {t('bestMixing')} <span className="highlight-icon">⚡</span>
           </h1>
           
           <div className="tagline">
-            <p>The world has enough noise.</p>
-            <p>Let's make something different.</p>
+            <p>{t('worldHasNoise')}</p>
+            <p>{t('makeDifferent')}</p>
           </div>
           
-          <a href="#services" className="hero-btn">Learn More</a>
+          <a href="#services" className="hero-btn" onClick={scrollToStats}>{t('learnMore')}</a>
         </div>
       </div>
     </section>

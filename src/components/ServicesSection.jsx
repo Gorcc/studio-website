@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./ServicesSection.css";
+import { useLanguage } from "../context/LanguageContext";
 
 function ServicesSection() {
+  const { t = key => key } = useLanguage() || {};
+
   // Services array for the carousel
   const services = [
-    { text: "Beat Making", icon: "💀" },
-    { text: "Recording", icon: "⚡" },
-    { text: "Mix / Mastering", icon: "🎵" },
-    { text: "Video Shoot", icon: "🎬" },
+    { textKey: "beatMaking", icon: "💀" },
+    { textKey: "recording", icon: "⚡" },
+    { textKey: "mixMastering", icon: "🎵" },
+    { textKey: "videoShoot", icon: "🎬" },
   ];
 
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -31,7 +35,7 @@ function ServicesSection() {
               {/* Repeat the services twice for seamless looping */}
               {[...services, ...services, ...services].map((service, index) => (
                 <span key={index} className="carousel-item">
-                  {service.text}{" "}
+                  {t(service.textKey)}{" "}
                   <span className="highlight-icon">{service.icon}</span>
                 </span>
               ))}
@@ -44,46 +48,40 @@ function ServicesSection() {
       <section className="stats-section">
         <div className="container">
           <p className="stats-description">
-            Hive Records is a Kyrenia-based recording studio, open 24/7 for
-            artists who never sleep on creativity. Whether you're laying down
-            your first demo or producing a full album, our space is built for
-            all levels of talent. From vocal booths to mixing and mastering — we
-            offer everything you need to bring your sound to life.
+            {t('studioDescription')}
           </p>
 
           <div className="stats-container">
-            
             <div className="stat-item">
               <h2>
                 100<span className="plus-icon">+</span>
               </h2>
-              <p>Musicians collaborate</p>
+              <p>{t('musiciansCollaborate')}</p>
             </div>
             <div className="stat-item">
               <h2>
                 100<span className="plus-icon">+</span>
               </h2>
-              <p>Tracks produced</p>
+              <p>{t('tracksProduced')}</p>
             </div>
             <div className="stat-item">
               <h2>
                 100<span className="plus-icon">+</span>
               </h2>
-              <p>Album produced</p>
+              <p>{t('albumProduced')}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      
       <section className="how-it-works">
         <div className="container">
           <div className="how-header">
             <h2>
-              What we do at Hive Records <span className="highlight-icon">⚡</span>
+              {t('whatWeDo')} <span className="highlight-icon">⚡</span>
             </h2>
-            <p>Safe and secure with tens of thousands of verified reviews</p>
+            <p>{t('safeAndSecure')}</p>
           </div>
 
           <div className="process-cards">
@@ -91,34 +89,32 @@ function ServicesSection() {
               <div className="card-image">
                 <img src="https://github.com/Gorcc/cdn/blob/main/hive/beat.jpg?raw=true" alt="Beat making" />
               </div>
-              <h3>Beat Making</h3>
+              <h3>{t('beatMaking')}</h3>
             </div>
 
             <div className="process-card">
               <div className="card-image">
                 <img src="https://github.com/Gorcc/cdn/blob/main/hive/recording.jpg?raw=true" alt="Recording" />
               </div>
-              <h3>Recording</h3>
+              <h3>{t('recording')}</h3>
             </div>
 
             <div className="process-card">
               <div className="card-image">
                 <img src="https://github.com/Gorcc/cdn/blob/main/hive/mixing.jpg?raw=true" alt="Mix/Mastering" />
               </div>
-              <h3>Mix / Mastering</h3>
+              <h3>{t('mixMastering')}</h3>
             </div>
 
             <div className="process-card">
               <div className="card-image">
                 <img src="https://github.com/Gorcc/cdn/blob/main/hive/video.jpg?raw=true" alt="Video Shoot" />
               </div>
-              <h3>Video Shoot</h3>
+              <h3>{t('videoShoot')}</h3>
             </div>
           </div>
 
-          <button className="get-started-btn">Get Started!</button>
-
-       
+          <Link to="/contact" className="get-started-btn">{t('getStarted')}</Link>
         </div>
       </section>
     </>

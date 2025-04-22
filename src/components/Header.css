@@ -1,0 +1,83 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-btn{
+  margin-right: 24px;
+}
+
+.logo {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color, #FFE600);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.cta-btn {
+  background-color: var(--accent-color, #FFE600);
+  color: var(--primary-color, #000000);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Dark background version for pages other than home */
+.dark-bg .site-header {
+  background-color: #111;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .header-left {
+    gap: 0.75rem;
+  }
+}

@@ -100,7 +100,7 @@
 }
 
 .social-icons a:hover {
-  color: var(--accent-color, #FFE600);
+  
 }
 
 @media (max-width: 768px) {

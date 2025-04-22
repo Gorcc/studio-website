@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
-
 import LanguageToggle from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -34,11 +33,18 @@ function Header() {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header className="site-header">
       <div className="header-left">
-       
-        <div className="logo">Hive <span>Records</span></div>
+    
+        <div className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
+          Hive <span>Records</span>
+        </div>
       </div>
       <nav className="nav-links">
         <Link to="/" onClick={() => window.scrollTo(0, 0)}>{t('home')}</Link>

@@ -49,7 +49,7 @@ function HeroSection() {
       ? 'Bir%20seans%20rezervasyonu%20yapmak%20istiyorum' 
       : 'I%20want%20to%20book%20a%20session';
     
-    window.open(`https://wa.me/905331234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/905338683477?text=${message}`, '_blank');
   };
 
   return (

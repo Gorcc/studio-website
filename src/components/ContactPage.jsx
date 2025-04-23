@@ -5,7 +5,16 @@ import './ContactPage.css';
 import { useLanguage } from '../context/LanguageContext';
 
 function ContactPage() {
-  const { t = key => key } = useLanguage() || {};
+  const { t = key => key, language } = useLanguage() || {};
+
+  const handleWhatsAppClick = () => {
+    // Customize the message based on language
+    const message = language === 'tr' 
+      ? 'Merhaba,%20Hive%20Records%20hakkında%20bilgi%20almak%20istiyorum' 
+      : 'Hello,%20I%20would%20like%20to%20get%20information%20about%20Hive%20Records';
+    
+    window.open(`https://wa.me/905338683477?text=${message}`, '_blank');
+  };
 
   return (
     <section className="contact-page">
@@ -25,16 +34,18 @@ function ContactPage() {
                 <i className="fas fa-map-marker-alt"></i>
               </div>
               <h3>{t('visitUs')}</h3>
+
               <p>Mete Adanır Caddesi</p>
               <p>Barış Parkı Karşısı, Girne</p>
             </div>
             
-            <div className="info-card">
+            <div className="info-card pointer " onClick={handleWhatsAppClick}>
               <div className="icon">
                 <i className="fas fa-phone-alt"></i>
               </div>
-              <h3>{t('callUs')}</h3>
-              <p>+90 533 123 4567</p>
+              <h3> {t('callUs')}</h3>
+              <p>+90 533 868 34 77</p>
+             
               <p>{t('available247')}</p>
             </div>
             
@@ -44,7 +55,6 @@ function ContactPage() {
               </div>
               <h3>{t('emailUs')}</h3>
               <p>info@hiverecords.com</p>
-           
             </div>
             
             <div className="info-card">
@@ -60,10 +70,12 @@ function ContactPage() {
           <div className="social-links-container">
             <h3>{t('followUs')}</h3>
             <div className="social-icons">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/hiverecords24/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
+             
             </div>
+            
           </div>
         </div>
         

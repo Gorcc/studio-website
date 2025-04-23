@@ -13,7 +13,7 @@ function Footer() {
     "name": "Hive Records",
     "image": "https://hiverecords.com/logo.png",
     "url": "https://hiverecords.com",
-    "telephone": "+90 533 123 4567",
+    "telephone": "+90 533 868 34 77",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Mete Adanır Caddesi, Barış Parkı Karşısı",
@@ -75,7 +75,7 @@ function Footer() {
                 <li>Mete Adanır Caddesi</li>
                 <li>Barış Parkı Karşısı, Girne</li>
                 <li>info@hiverecords.com</li>
-                <li>+90 533 123 4567</li>
+                <li>+90 533 868 34 77</li>
               </ul>
             </div>
           </div>
@@ -84,7 +84,7 @@ function Footer() {
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Hive Records. {t('allRightsReserved')}</p>
           <div className="social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/hiverecords24/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>

@@ -93,7 +93,7 @@ const translations = {
     aboutUs: "About Us",
     ourTeam: "Our Team",
     careers: "Careers",
-    bookNow:"Book Now"
+    bookNow:"Reservation"
   },
   tr: {
     // Header

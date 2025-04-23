@@ -2,10 +2,11 @@ import React from 'react';
 import './HeroSection.css';
 import Header from './Header';
 import { useLanguage } from '../context/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 function HeroSection() {
-  // Add a fallback in case the context is not available
-  const { t = key => key } = useLanguage() || {};
+  const { t = key => key, language } = useLanguage() || {};
+  const navigate = useNavigate();
   
   const scrollToStats = (e) => {
     e.preventDefault();
@@ -13,6 +14,15 @@ function HeroSection() {
     if (statsSection) {
       statsSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleBookNow = () => {
+    // Customize the message based on language
+    const message = language === 'tr' 
+      ? 'Bir%20seans%20rezervasyonu%20yapmak%20istiyorum' 
+      : 'I%20want%20to%20book%20a%20session';
+    
+    window.open(`https://wa.me/905331234567?text=${message}`, '_blank');
   };
 
   return (
@@ -37,7 +47,12 @@ function HeroSection() {
             <p>{t('makeDifferent')}</p>
           </div>
           
-          <a href="#services" className="hero-btn" onClick={scrollToStats}>{t('learnMore')}</a>
+          <div className="hero-buttons">
+            <a href="#services" className="hero-btn" onClick={scrollToStats}>{t('learnMore')}</a>
+            <button className="book-now-btn" onClick={handleBookNow}>
+              <i className="fab fa-whatsapp"></i> {t('bookNow')}
+            </button>
+          </div>
         </div>
       </div>
     </section>

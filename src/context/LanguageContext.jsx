@@ -41,6 +41,8 @@ export const useLanguage = () => {
 };
 
 // Translations object
+// Add this to your translations object in LanguageContext.jsx
+// Add or update these translations in your LanguageContext.jsx file
 const translations = {
   en: {
     // Header
@@ -90,7 +92,8 @@ const translations = {
     company: "Company",
     aboutUs: "About Us",
     ourTeam: "Our Team",
-    careers: "Careers"
+    careers: "Careers",
+    bookNow:"Book Now"
   },
   tr: {
     // Header
@@ -118,7 +121,7 @@ const translations = {
     whatWeDo: "Hive Records'ta neler yapıyoruz",
     safeAndSecure: "Gerçek sanatçılar. Gerçek yorumlar. Gerçek sonuçlar",
     getStarted: "Hemen Başla!",
-    
+    bookNow: "Rezervasyon",
     // Contact Page
     contactUs: "Bize Ulaşın",
     getInTouchDesc: "Ekibimizle iletişime geçin ve birlikte harika bir şeyler yaratalım",

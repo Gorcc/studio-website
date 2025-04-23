@@ -7,7 +7,7 @@ function SEO({ title, description, keywords }) {
   
   const defaultTitle = language === 'en' 
     ? 'Hive Records | Professional Recording Studio in North Cyprus' 
-    : 'Hive Records | Kuzey Kıbrıs\'ta Profesyonel Kayıt Stüdyosu';
+    : 'Hive Records | Kuzey Kıbrıs\'ın Profesyonel Kayıt Stüdyosu';
   
   const defaultDescription = language === 'en'
     ? 'Professional music recording, mixing, mastering and video production services in Kyrenia, North Cyprus. Open 24/7 for all your music production needs.'

@@ -54,7 +54,7 @@ function ContactPage() {
                 <i className="fas fa-envelope"></i>
               </div>
               <h3>{t('emailUs')}</h3>
-              <p>info@hiverecords.com</p>
+              <p>okurtg@gmail.com</p>
             </div>
             
             <div className="info-card">

@@ -74,7 +74,7 @@ function Footer() {
               <ul>
                 <li>Mete Adanır Caddesi</li>
                 <li>Barış Parkı Karşısı, Girne</li>
-                <li>info@hiverecords.com</li>
+                <li>okurtg@gmail.com</li>
                 <li>+90 533 868 34 77</li>
               </ul>
             </div>

@@ -54,19 +54,19 @@ function ServicesSection() {
           <div className="stats-container">
             <div className="stat-item">
               <h2>
-                100<span className="plus-icon">+</span>
+                10<span className="plus-icon">+</span>
               </h2>
               <p>{t('musiciansCollaborate')}</p>
             </div>
             <div className="stat-item">
               <h2>
-                100<span className="plus-icon">+</span>
+                80<span className="plus-icon">+</span>
               </h2>
               <p>{t('tracksProduced')}</p>
             </div>
             <div className="stat-item">
               <h2>
-                100<span className="plus-icon">+</span>
+                20<span className="plus-icon">+</span>
               </h2>
               <p>{t('albumProduced')}</p>
             </div>

@@ -50,7 +50,7 @@
 
 .plus-icon {
   font-size: 2rem;
-  color: var(--accent-color, #FFE600);
+  color: #666;
   position: relative;
   top: -1.5rem;
 }

@@ -3,7 +3,8 @@ import './FloatingWidgets.css';
 import { useLanguage } from '../context/LanguageContext';
 
 function FloatingWidgets() {
-  const { language } = useLanguage() || {};
+    
+  const { language, t = key => key } = useLanguage() || {};
 
   const handleWhatsAppClick = () => {
     const message = language === 'tr' 

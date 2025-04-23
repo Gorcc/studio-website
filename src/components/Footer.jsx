@@ -84,8 +84,14 @@ function Footer() {
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Hive Records. {t('allRightsReserved')}</p>
           <div className="social-icons">
-            <a href="https://www.instagram.com/hiverecords24/" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@hiverecords_24?_t=ZS-8vm2XVGuROq&_r=1" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com/@hiverecords2244?si=HpkHluPQmnNWyj8X" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-youtube"></i>
             </a>
           </div>
         </div>

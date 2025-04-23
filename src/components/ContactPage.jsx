@@ -73,6 +73,12 @@ function ContactPage() {
               <a href="https://www.instagram.com/hiverecords24/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
+              <a href="https://www.tiktok.com/@hiverecords_24?_t=ZS-8vm2XVGuROq&_r=1" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-tiktok"></i>
+              </a>
+              <a href="https://youtube.com/@hiverecords2244?si=HpkHluPQmnNWyj8X" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-youtube"></i>
+              </a>
              
             </div>
             

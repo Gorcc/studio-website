@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ScrollToTop from './components/ScrollToTop';
 import { LanguageProvider } from './context/LanguageContext';
+import FloatingWidgets from './components/FloatingWidgets';
+import './App.css';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
           <Footer />
+          <FloatingWidgets />
         </div>
       </Router>
     </LanguageProvider>

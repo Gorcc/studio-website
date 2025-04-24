@@ -217,3 +217,73 @@ color: black;
 .pointer{
   cursor: pointer ;
 }
+
+/* Add these styles to your existing CSS file */
+
+.map-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.google-map {
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+
+.google-map iframe {
+  border-radius: 8px;
+}
+
+.map-title-container {
+  background-color: white;
+  padding: 15px 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top: 3px solid var(--accent-color, #FFE600);
+}
+
+.map-title-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.view-larger-map {
+  display: inline-flex;
+  align-items: center;
+  color: #4285F4;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.view-larger-map i {
+  margin-left: 6px;
+  font-size: 0.8rem;
+}
+
+.view-larger-map:hover {
+  color: #1967D2;
+  text-decoration: underline;
+}
+
+/* Make the map container more prominent on mobile */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .map-container {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  
+  .google-map {
+    height: 350px;
+  }
+}

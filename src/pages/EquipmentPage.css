@@ -1,0 +1,204 @@
+.equipment-page {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-header-bg {
+    background-color: #111;
+    color: white;
+    padding: 2rem 0 4rem;
+}
+
+.equipment-header-bg .container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.equipment-header-bg h1 {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: 3.5rem;
+    margin: 3rem 0 1rem;
+    color: white;
+    text-align: center;
+}
+
+.equipment-header-bg p {
+    font-size: 1.2rem;
+    color: #ddd;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.equipment-content {
+    display: flex;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.equipment-items {
+    flex: 3;
+}
+
+.equipment-sidebar {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+}
+
+.equipment-item {
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.equipment-item-image {
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.equipment-item-image img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.equipment-item:hover .equipment-item-image img {
+    transform: scale(1.05);
+}
+
+.equipment-item-content {
+    padding: 2rem;
+}
+
+.equipment-item-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.equipment-item-description {
+    line-height: 1.8;
+    color: #333;
+}
+
+.equipment-item-description p {
+    margin-bottom: 1.5rem;
+}
+
+.equipment-item-description ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.equipment-item-description li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.equipment-item-description li::marker {
+    color: var(--accent-color, #FFE600);
+}
+
+.equipment-item-description strong {
+    color: #111;
+}
+
+.sidebar-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 2rem;
+}
+
+.sidebar-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color, #FFE600);
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-section a:hover {
+    color: var(--accent-color, #FFE600);
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--accent-color, #FFE600);
+    color: #111;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+    .equipment-content {
+        flex-direction: column;
+    }
+    
+    .equipment-header-bg h1 {
+        font-size: 2.8rem;
+    }
+    
+    .sidebar-section {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipment-header-bg h1 {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+    }
+    
+    .equipment-item-image {
+        height: 300px;
+    }
+    
+    .equipment-item-image img {
+       height: 100%;
+       width: 100%;
+    }
+    .equipment-item-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .equipment-content {
+        padding: 2rem 1rem;
+    }
+}

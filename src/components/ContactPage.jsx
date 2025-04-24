@@ -86,7 +86,7 @@ function ContactPage() {
         </div>
         
         <div className="map-container">
-          <h2>{t('findUs')}</h2>
+       
           <div className="google-map">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.9104286574925!2d33.3140311!3d35.3330457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de13ea058c4dff%3A0x10884af0adb1cef4!2sHive%20Records!5e0!3m2!1str!2s!4v1745269818578!5m2!1str!2s" 
@@ -98,6 +98,18 @@ function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Hive Records Location"
             ></iframe>
+          </div>
+          <div className="map-title-container">
+            <h3>Hive Records - {language === 'tr' ? 'Haritadaki Konumu' : 'Location on Map'}</h3>
+            <a 
+              href="https://maps.google.com/maps?ll=35.333046,33.314031&z=16&t=m&hl=tr&gl=TR&mapclient=embed&cid=1204321053223124724" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="view-larger-map"
+            >
+              {language === 'tr' ? 'Daha büyük haritayı görüntüle' : 'View larger map'}
+              <i className="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
       </div>

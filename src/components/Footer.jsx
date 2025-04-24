@@ -66,6 +66,7 @@ function Footer() {
                 <li><a href="#recording">{t('recording')}</a></li>
                 <li><a href="#mixing">{t('mixMastering')}</a></li>
                 <li><a href="#video">{t('videoShoot')}</a></li>
+                
               </ul>
             </div>
             
@@ -76,12 +77,14 @@ function Footer() {
                 <li>Barış Parkı Karşısı, Girne</li>
                 <li>okurtg@gmail.com</li>
                 <li>+90 533 868 34 77</li>
+                <a href="/blog">Blog</a>
               </ul>
             </div>
           </div>
         </div>
         
         <div className="footer-bottom">
+          
           <p>&copy; {new Date().getFullYear()} Hive Records. {t('allRightsReserved')}</p>
           <div className="social-icons">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -93,6 +96,7 @@ function Footer() {
             <a href="https://youtube.com/@hiverecords2244?si=HpkHluPQmnNWyj8X" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
+         
           </div>
         </div>
       </footer>

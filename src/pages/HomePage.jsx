@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import { useLanguage } from '../context/LanguageContext';
 
 function HomePage() {
-  const { language } = useLanguage() || { language: 'en' };
+  const { language } = useLanguage() || { language: 'tr' };
   
   // SEO content based on language
   const seoTitle = language === 'en' 

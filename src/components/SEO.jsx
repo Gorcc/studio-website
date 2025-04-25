@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useLanguage } from '../context/LanguageContext';
 
 function SEO({ title, description, keywords }) {
-  const { language } = useLanguage() || { language: 'en' };
+  const { language } = useLanguage() || { language: 'tr' };
   
   const defaultTitle = language === 'en' 
     ? 'Hive Records | Professional Recording Studio in North Cyprus' 

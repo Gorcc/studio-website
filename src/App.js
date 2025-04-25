@@ -8,6 +8,7 @@ import BlogPage from './pages/BlogPage';
 import ScrollToTop from './components/ScrollToTop';
 import { LanguageProvider } from './context/LanguageContext';
 import FloatingWidgets from './components/FloatingWidgets';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 
 // Add this import at the top with your other imports
@@ -23,11 +24,12 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/blog" element={<BlogPage />} />
-            // Then add this route to your Routes component
+            {/* Fixed comment syntax */}
             <Route path="/equipment" element={<EquipmentPage />} />
           </Routes>
           <Footer />
           <FloatingWidgets />
+          <Analytics />
         </div>
       </Router>
     </LanguageProvider>

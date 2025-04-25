@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Hive Records Resmi Web Sitesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, Kıbrıs Girne merkezli profesyonel müzik stüdyosu **Hive Records** için geliştirilen resmi web sitesidir.  
+Freelance çalışma kapsamında modern, hızlı, çok dilli ve kullanıcı dostu bir web deneyimi sunmak amacıyla tasarlanmıştır.
 
-## Available Scripts
+🌐 Canlı Site: [www.hiverecords24.com](https://www.hiverecords24.com/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Proje Özeti
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bu web sitesi, Hive Records'ın vizyonunu, sunduğu hizmetleri, stüdyo ekipmanlarını ve yaratıcı içeriğini etkili bir şekilde tanıtmak için geliştirilmiştir.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Temel Özellikler
 
-### `npm test`
+- 🧭 Ana Sayfa: Marka tanıtımı ve yönlendirme butonları
+- 💼 Hizmetler Sayfası: Fiyatlar, hizmet detayları ve açıklamalar
+- 🏢 Stüdyo Turu: Odaların ve ekipmanların yüksek kaliteli görselleri
+- 📝 Blog: Çok dilli içeriklerle sektörel bilgiler ve içerikler
+- 📍 İletişim: Harita entegrasyonu ve doğrudan iletişim bilgileri
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Kullanılan Teknolojiler
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Teknoloji         | Açıklama                                  |
+|------------------|--------------------------------------------|
+| React            | Kullanıcı arayüzü                          |
+| React Router     | Sayfa yönlendirme ve geçişler              |
+| Context API      | Dil değiştirme fonksiyonu                  |
+| HTML / CSS       | Yapı ve stil                               |
+| JavaScript (ES6) | Etkileşim ve mantıksal işlemler            |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🌍 Çok Dilli Destek
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Web sitesi, Türkçe ve İngilizce dillerini desteklemektedir. Dil seçimi global Context API ile kontrol edilmekte ve tüm sayfalarda tutarlı bir şekilde uygulanmaktadır.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ✏️ Notlar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Sayfa görselleri optimize edilmiştir ancak yüksek çözünürlük korunmuştur.
+- İletişim kısmı yalnızca statik bilgiler ve harita içerir; form bulunmamaktadır.
+- Tüm içerik ve görseller müşteri tarafından temin edilmiştir.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👨‍💼 Müşteri
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Hive Records**  
+Girne, Kuzey Kıbrıs  
+Profesyonel kayıt ve müzik prodüksiyon stüdyosu.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👨‍💻 Geliştirici
 
-### Making a Progressive Web App
+**Deniz Görkem Ater**  
+gorkem.ater1@gmail..com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
